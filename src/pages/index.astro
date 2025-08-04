@@ -2,8 +2,9 @@
 import Layout from "@/layouts/Layout.astro";
 import HeroKeyLogo from "@/assets/hero-key-logo.webp";
 import HeroKeyBackground from "@/assets/hero-key-background.webp";
-import LogoVI from "@/assets/logo-vi.svg";
-import Menu from "@/assets/menu.svg";
+import LogoVIIcon from "@/assets/logo-vi.svg";
+import MenuIcon from "@/assets/menu.svg";
+import PlayButtonIcon from "@/assets/play-button.svg";
 ---
 <Layout>
   <section>
@@ -25,8 +26,12 @@ import Menu from "@/assets/menu.svg";
 
   <div class="fixed flex flex-col items-center justifi-between p-16 py-14 w-full h-screen">
     <header class="flex justify-between w-full">
-      <LogoVI class="size-8 text-white hover:text-yellow-100 transition-colors duration-500 cursor-pointer" />
-      <Menu class="size-8 text-white hover:text-yellow-100 transition-colors duration-500 cursor-pointer" />
+      <LogoVIIcon class="size-8 text-white hover:text-yellow-100 transition-colors duration-500 cursor-pointer" />
+      <MenuIcon class="size-8 text-white hover:text-yellow-100 transition-colors duration-500 cursor-pointer" />
     </header>
+
+    <button class="m-auto absolute inset-0 inline-block">
+      <PlayButtonIcon id="hero-play-button" class="m-auto cursor-pointer size-24 mt-10 backdrop-blur-3xl rounded-full hover:scale-110 transition-transform duration-500" />
+    </button>
   </div>
 </Layout>
